@@ -21,7 +21,6 @@ p
     font-size: 16px;
 }
 
-
 .header 
 {
     padding: 20px;
@@ -30,13 +29,13 @@ p
     color: dark grey;
 }
 
-.header h1 
+.header h1 h2 h3
 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo 
+.header h1 h2 h3
 {
     color: #d9dcd6;
 }
