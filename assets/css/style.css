@@ -172,37 +172,3 @@ section > div {
     color: #92cbcd;
     background-color: #5d6e8a;
   }
-  
-/* Work Section */
-
-.h1 {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
-.header h2 h3 {
-  display: inline-block;
-  font-size: 48px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: darkslategrey;
-}
-
-.h1 {
-  display: flex;
-  justify-content: start;
-}
-
-.header nav ul {
-  display: flex;
-  -ms-flex-align: end;
-  list-style-type: none;
-}
-
-.header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-  text-decoration: underline;
-}
