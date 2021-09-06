@@ -98,7 +98,7 @@ p {
   text-decoration: underline;
 }
 
-.main-content 
+main 
 {
     display: flex;
     flex-direction: column;
@@ -128,10 +128,10 @@ p {
     border-left: 5px solid #5d6e8a;
   }
   
-#About-Me h2,
-#Work h2,
-#Contact-Me h2,
-#Resume {
+#about-me h2,
+#work h2,
+#contact-me h2,
+#resume {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
@@ -139,9 +139,9 @@ p {
   color: darkslategrey;
 }
 
-#About-Me h1 h2 h3,
-#Work h1 h2 h3,
-#Contact-Me h1,
+#about-me h1 h2 h3,
+#work h1 h2 h3,
+#contact-me h1,
 h2,
 h3 
 { 
@@ -150,7 +150,7 @@ h3
   font-size: 36px;
   flex-direction: column;
 }
-#Contact-Me ul {
+#contact-me ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
