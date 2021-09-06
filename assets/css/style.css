@@ -62,20 +62,19 @@ p {
     "Lucida Sans", Arial, sans-serif;
 }
 
-.h1 {
+.header h1 h2{
   padding: 60px;
   text-align: center;
   background: #1abc9c;
   color: white;
   font-size: 30px;
-}
-.header h2 h3 {
   display: inline-block;
   font-size: 48px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: darkslategrey;
 }
+
 #header nav ul {
   padding-top: 15px;
   margin-right: 20px;
