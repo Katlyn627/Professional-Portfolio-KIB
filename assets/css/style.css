@@ -91,19 +91,20 @@ section h1 {
   padding-right: 20px;
 }
 
-section > div {
+section > div
+{
   padding-left: 20px;
   border-left: 5px solid #5d6e8a;
   margin-bottom: 30px;
 }
-/* About Section */
+/* About Me Section */
 #about-me div img {
   float: right;
   margin-left: 5px;
   margin-bottom: 5px;
 }
 
-/* Work Section */
+/* Mock Up Work Section */
 #work div
 {
   display: flex;
@@ -131,7 +132,7 @@ section > div {
   border: 5px solid #92cbcd;
   height: auto;
   width: 100%;
-  filter: brightness(75%);
+  filter:brightness(80%)
 }
 
 .work-subtitle {
