@@ -25,8 +25,9 @@ header .logo {
   height: 100%;
   padding-right: 5%;
 }
-header .logo h1 {
-  font-size: 2cm;
+header .logo h1
+{
+  font-size: 1cm;
   margin-left: 10px;
 }
 header nav {
@@ -103,14 +104,15 @@ section > div {
 }
 
 /* Work Section */
-#work div {
+#work div
+{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 90%;
 }
 
-.work-main-class {
+.work-main-class{
   width: 100%;
   position: relative;
 }
@@ -136,8 +138,8 @@ section > div {
   position: absolute;
   left: 0;
   bottom: 10%;
-  color: #31343d;
-  background-color: #92ccce;
+  color: #92cbcd;
+  background-color: #31343d;
   text-decoration: none;
   padding: 20px;
 }
@@ -171,4 +173,43 @@ section > div {
   #contact-me div a:hover {
     color: #92cbcd;
     background-color: #5d6e8a;
+  }
+  @media screen and (max-width: 500px)
+  {
+    header {
+      flex-direction: column;
+    }
+  
+    header .logo,
+    header nav {
+      width: 100vw;
+    }
+  
+    header .logo h1 {
+      margin: 0 auto;
+    }
+  
+    figure .subtitle {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    main {
+      width: 100%;
+      padding: 0px 10px;
+    }
+  
+    #contact-me div {
+      flex-direction: column;
+    }
+  
+    #contact-me div a {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .work-link {
+      width: 100%;
+    }
   }
