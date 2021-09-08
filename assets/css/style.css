@@ -1,8 +1,10 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -16,6 +18,7 @@ header {
   height: 80px;
   padding: 10px 20px 10px 0px;
 }
+
 header .logo {
   display: flex;
   flex-wrap: wrap;
@@ -25,8 +28,7 @@ header .logo {
   height: 100%;
   padding-right: 5%;
 }
-header .logo h1
-{
+header .logo h1 {
   font-size: 1cm;
   margin-left: 10px;
 }
@@ -40,9 +42,10 @@ header nav {
 }
 
 header nav a {
-  color: #92ccce;
+  color: #5d6e8a;
   margin: 5px;
 }
+
 /* Header Image Style */
 .main-image {
   background-image: url("../images/header-image.png");
@@ -67,6 +70,7 @@ header nav a {
 .subtitle h1 {
   font-size: 20px;
 }
+
 /* Main Section Styling */
 main {
   display: flex;
@@ -91,12 +95,12 @@ section h1 {
   padding-right: 20px;
 }
 
-section > div
-{
+section div {
   padding-left: 20px;
   border-left: 5px solid #5d6e8a;
   margin-bottom: 30px;
 }
+
 /* About Me Section */
 #about-me div img {
   float: right;
@@ -105,34 +109,33 @@ section > div
 }
 
 /* Mock Up Work Section */
-#work div
-{
+#work div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 90%;
 }
 
-.work-main-class{
+.work-main-class {
   width: 100%;
   position: relative;
 }
 
-.work-link {
+.working-app {
   width: 49%;
   margin-bottom: 10px;
   position: relative;
 }
 
-.work-img:hover {
+.work-image:hover {
   filter: brightness(100%);
 }
 
-.work-img {
+.work-image {
   border: 5px solid #92cbcd;
-  height: auto;
+  height: 80vh;
   width: 100%;
-  filter:brightness(80%)
+  filter: brightness(80%);
 }
 
 .work-subtitle {
@@ -153,64 +156,65 @@ section > div
   width: 100%;
 }
 
-/* Contact Section */ #contact-me div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+/* Contact Section */
+#contact-me div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+#contact-me div a {
+  color: #5d6e8a;
+  margin: 5px;
+  padding: 5px;
+  font-size: 2vw;
+  text-decoration: none;
+  border-bottom: 5px solid #5d6e8a;
+  transition: all 0.3s ease-in;
+}
+
+#contact-me div a:hover {
+  color: #92cbcd;
+  background-color: #5d6e8a;
+}
+/* Added media style to adjust content properly */
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  header .logo,
+  header nav {
+    width: 100vw;
+  }
+
+  header .logo h1 {
+    margin: 0 auto;
+  }
+
+  .main-image .subtitle {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  #contact-me div {
+    flex-direction: column;
+  }
+
+  #contact-me div a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .working-app {
     width: 100%;
   }
-  
-  #contact-me div a {
-    color: #5d6e8a;
-    margin: 5px;
-    padding: 5px;
-    font-size: 2vw;
-    text-decoration: none;
-    border-bottom: 5px solid #5d6e8a;
-    transition: all 0.3s ease-in;
-  }
-  
-  #contact-me div a:hover {
-    color: #92cbcd;
-    background-color: #5d6e8a;
-  }
-  @media screen and (max-width: 500px)
-  {
-    header {
-      flex-direction: column;
-    }
-  
-    header .logo,
-    header nav {
-      width: 100vw;
-    }
-  
-    header .logo h1 {
-      margin: 0 auto;
-    }
-  
-    figure .subtitle {
-      width: 80%;
-      margin: 0 auto;
-    }
-  
-    main {
-      width: 100%;
-      padding: 0px 10px;
-    }
-  
-    #contact-me div {
-      flex-direction: column;
-    }
-  
-    #contact-me div a {
-      font-size: 16px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .work-link {
-      width: 100%;
-    }
-  }
+}
