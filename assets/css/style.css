@@ -6,15 +6,14 @@
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   background-color: #eee;
-  color: darkslategray;
+  color: black;
 }
 /* Header Style Section */
 header {
   display: flex;
-  background-color: slategray;
+  background-color: #2164f3;
   height: 80px;
   padding: 10px 20px 10px 0px;
 }
@@ -41,7 +40,7 @@ header nav {
 }
 
 header nav a {
-  color: #5d6e8a;
+  color: #92ccce;
   margin: 5px;
 }
 
@@ -57,14 +56,17 @@ header nav a {
 }
 
 .subtitle {
+  font-size: 30px;
+  color: black;
   display: flex;
   position: absolute;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #92ccce;
-  top: 120px;
+  top: 140px;
   right: 50px;
-  width: 150px;
+  height: 10vh;
+  background-color: #92ccce;
+  
 }
 .subtitle h1 {
   font-size: 20px;
@@ -76,7 +78,7 @@ main {
   flex-direction: column;
   width: 70%;
   margin: 0 auto;
-  color: slategray;
+  color: black;
 }
 section {
   display: flex;
@@ -96,8 +98,7 @@ section h1 {
 
 section div {
   padding-left: 20px;
-  border-left: 5px solid #5d6e8a;
-  margin-bottom: 30px;
+  border-left: 5px solid #acb4c5;
 }
 
 /* About Me Section */
@@ -131,7 +132,7 @@ section div {
 }
 
 .work-image {
-  border: 5px solid #92cbcd;
+  border: 5px solid #92ccce;
   height: 80vh;
   width: 100%;
   filter: brightness(80%);
@@ -141,14 +142,13 @@ section div {
   position: absolute;
   left: 0;
   bottom: 10%;
-  color: #92cbcd;
-  background-color: #31343d;
+  color: black;
+  background-color: #92ccce;
   text-decoration: none;
   padding: 20px;
-}
-
-.work-subtitle h3 {
-  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 5px solid #92ccce;
+  font-size: 10px;
 }
 
 .feature {
@@ -156,7 +156,7 @@ section div {
 }
 
 /* Contact Section */
-#contact-me div {
+#contact-me div ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -165,12 +165,12 @@ section div {
 }
 
 #contact-me div a {
-  color: #5d6e8a;
+  color: black;
   margin: 5px;
   padding: 5px;
   font-size: 2vw;
   text-decoration: none;
-  border-bottom: 5px solid #5d6e8a;
+  border-bottom: 5px solid #2164f3;
   transition: all 0.3s ease-in;
 }
 
