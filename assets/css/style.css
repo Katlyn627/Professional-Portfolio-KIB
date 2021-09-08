@@ -8,12 +8,12 @@
 body {
   font-family:Arial, Helvetica, sans-serif;
   background-color: #eee;
-  color: black;
+  color: #283036;
 }
 /* Header Style Section */
 header {
   display: flex;
-  background-color: #2164f3;
+  background-color: #31343d;
   height: 80px;
   padding: 10px 20px 10px 0px;
 }
@@ -56,20 +56,13 @@ header nav a {
 }
 
 .subtitle {
-  font-size: 30px;
-  color: black;
   display: flex;
   position: absolute;
   flex-wrap: wrap;
   justify-content: center;
   top: 140px;
   right: 50px;
-  height: 10vh;
   background-color: #92ccce;
-  
-}
-.subtitle h1 {
-  font-size: 20px;
 }
 
 /* Main Section Styling */
@@ -78,7 +71,7 @@ main {
   flex-direction: column;
   width: 70%;
   margin: 0 auto;
-  color: black;
+  color: #465874;
 }
 section {
   display: flex;
@@ -142,13 +135,17 @@ section div {
   position: absolute;
   left: 0;
   bottom: 10%;
-  color: black;
+  color: #465874;
   background-color: #92ccce;
   text-decoration: none;
   padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   border-left: 5px solid #92ccce;
-  font-size: 10px;
+}
+
+.work-subtitle h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#393840;
+  font-size: 20px;
 }
 
 .feature {
@@ -165,13 +162,13 @@ section div {
 }
 
 #contact-me div a {
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
   margin: 5px;
   padding: 5px;
-  font-size: 2vw;
+  font-size: 20px;
   text-decoration: none;
-  border-bottom: 5px solid #2164f3;
-  transition: all 0.3s ease-in;
+  border-bottom: 5px solid #283036;
 }
 
 #contact-me div a:hover {
@@ -179,7 +176,7 @@ section div {
   background-color: #5d6e8a;
 }
 /* Added media style to adjust content properly */
-@media screen and (max-width: 500px) {
+@media screen and (max-width:after) {
   header {
     flex-direction: column;
   }
@@ -194,7 +191,7 @@ section div {
   }
 
   .main-image .subtitle {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -212,7 +209,7 @@ section div {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:after) {
   .working-app {
     width: 100%;
   }
