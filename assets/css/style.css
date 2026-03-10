@@ -97,8 +97,18 @@ section div {
 /* About Me Section */
 #about-me div img {
   float: right;
-  margin-left: 5px;
-  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #92ccce;
+}
+
+#about-me div a {
+  color: #465874;
+  font-weight: bold;
 }
 
 /* Mock Up Work Section */
@@ -176,7 +186,7 @@ section div {
   background-color: #5d6e8a;
 }
 /* Added media style to adjust content properly */
-@media screen and (max-width:after) {
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
   }
@@ -209,7 +219,7 @@ section div {
   }
 }
 
-@media screen and (max-width:after) {
+@media screen and (max-width: 600px) {
   .working-app {
     width: 100%;
   }
